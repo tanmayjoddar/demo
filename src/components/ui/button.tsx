@@ -16,9 +16,11 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        menu: "gap-3 bg-transparent text-foreground uppercase text-[10px] font-bold tracking-[0.3em] underline decoration-primary/40 underline-offset-8 hover:decoration-primary",
-        menuInverse: "bg-transparent text-background hover:text-primary",
-        circle: "rounded-full border border-border bg-transparent text-foreground uppercase text-[10px] font-bold tracking-widest hover:border-primary hover:bg-primary hover:text-primary-foreground",
+        menu: "gap-2.5 rounded-full border border-foreground/25 bg-foreground/[0.05] px-5 text-foreground uppercase text-[11px] font-bold tracking-[0.22em] hover:border-primary hover:bg-primary/10 hover:text-primary",
+        menuInverse:
+          "gap-2.5 rounded-full border border-background/30 bg-background/10 px-5 text-background uppercase text-[11px] font-bold tracking-[0.22em] hover:border-primary hover:text-primary",
+        circle:
+          "rounded-full border border-border bg-transparent text-foreground uppercase text-[10px] font-bold tracking-widest hover:border-primary hover:bg-primary hover:text-primary-foreground",
         solid: "bg-foreground text-background hover:bg-primary hover:text-primary-foreground",
       },
       size: {
@@ -26,7 +28,7 @@ const buttonVariants = cva(
         sm: "h-8 rounded-md px-3 text-xs",
         lg: "h-10 rounded-md px-8",
         icon: "h-11 w-11",
-        menu: "h-11 px-0",
+        menu: "h-12 px-5",
         circle: "size-24 p-4",
         wide: "h-14 px-8",
       },

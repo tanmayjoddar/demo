@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ReviewsMarquee } from "@/components/reviews-carousel";
 import { projects } from "@/lib/studio-data";
@@ -46,25 +47,40 @@ function HomePage() {
   }, []);
   return (
     <>
-      <section className="relative px-5 pb-20 pt-10 sm:px-10 lg:px-12 lg:pb-28">
+      <section className="relative px-5 pb-14 pt-8 sm:px-10 lg:px-12 lg:pb-28 lg:pt-10">
         <div className="pointer-events-none absolute left-[45%] top-0 h-[700px] w-px -rotate-12 bg-linear-to-b from-transparent via-background to-transparent" />
-        <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-12">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="reveal lg:col-span-6 lg:pt-20">
-            <h1 className="font-display text-6xl font-light leading-[0.86] sm:text-8xl lg:text-[7.5rem]">
+            <h1 className="font-display text-5xl font-light leading-[0.9] sm:text-8xl sm:leading-[0.86] lg:text-[7.5rem]">
               Inch by Inch
               <br />
               <span className="relative inline-block italic text-primary">to fulfill</span>
               <br />
               your dreams
             </h1>
-            <div className="mt-12 flex flex-col gap-9 sm:flex-row sm:items-center lg:mt-16">
+            <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:items-center sm:gap-9 lg:mt-16">
               <p className="max-w-[310px] text-sm leading-relaxed text-muted-foreground">
                 We compose rooms from daylight, quiet geometry and materials allowed to show their
                 age.
               </p>
-              <Button asChild variant="circle" size="circle">
-                <Link to="/work">Explore</Link>
-              </Button>
+              <Link
+                to="/work"
+                className="group inline-flex items-center gap-4 self-start sm:self-auto"
+              >
+                <span className="relative overflow-hidden pb-2 text-[11px] font-bold uppercase tracking-[0.22em] text-muted-foreground transition-colors duration-300 group-hover:text-foreground">
+                  Explore our work
+                  <span
+                    aria-hidden="true"
+                    className="absolute bottom-0 left-0 h-px w-full -translate-x-[102%] bg-primary transition-transform duration-500 ease-out group-hover:translate-x-0"
+                  />
+                </span>
+                <span className="inline-flex size-12 items-center justify-center rounded-full bg-primary text-primary-foreground transition-colors duration-300 group-hover:bg-foreground group-hover:text-background">
+                  <ArrowRight
+                    aria-hidden="true"
+                    className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5"
+                  />
+                </span>
+              </Link>
             </div>
           </div>
           <div className="relative lg:col-span-6">
@@ -77,11 +93,6 @@ function HomePage() {
                 fetchPriority="high"
                 className="h-full w-full object-cover transition-transform duration-1000 hover:scale-105"
               />
-            </div>
-            <div className="glass-panel absolute -bottom-10 left-3 z-20 hidden w-64 p-7 sm:block lg:-left-10">
-              <span className="mb-4 block h-px w-8 bg-foreground" />
-              <p className="font-display text-2xl italic">The Monolith</p>
-              <p className="mt-2 text-label text-muted-foreground">Residence — 2024</p>
             </div>
             <div className="absolute -right-3 top-1/4 z-20 aspect-square w-32 overflow-hidden rounded-full border-[8px] border-background shadow-2xl sm:w-44 lg:-right-8">
               <img
@@ -102,11 +113,11 @@ function HomePage() {
       >
         <div className="animate-marquee flex w-max items-center gap-16 whitespace-nowrap text-label text-muted-foreground">
           <span>Scroll position {String(progress).padStart(2, "0")}%</span>
-          <span>Lisbon 38.7223° N</span>
+          <span>Bardhaman 23.55° N</span>
           <span>Section 01 / 04</span>
           <span>Material honesty</span>
           <span>Scroll position {String(progress).padStart(2, "0")}%</span>
-          <span>Lisbon 38.7223° N</span>
+          <span>Bardhaman 23.55° N</span>
           <span>Section 01 / 04</span>
           <span>Material honesty</span>
         </div>

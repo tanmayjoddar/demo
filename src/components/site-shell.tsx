@@ -54,7 +54,15 @@ export function SiteShell({ children }: { children: ReactNode }) {
             </Link>
           ))}
         </nav>
-        <Button variant="menu" size="menu" onClick={() => setOpen(true)} aria-label="Open menu">
+        <Button
+          variant="menu"
+          size="menu"
+          onClick={() => setOpen(true)}
+          aria-label="Open menu"
+          aria-expanded={open}
+          className="[&_svg]:size-5"
+        >
+          <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-primary" />
           <span>Menu</span>
           <Menu aria-hidden="true" />
         </Button>
@@ -72,10 +80,12 @@ export function SiteShell({ children }: { children: ReactNode }) {
             </Link>
             <Button
               variant="menuInverse"
-              size="icon"
+              size="menu"
               onClick={() => setOpen(false)}
               aria-label="Close menu"
+              className="[&_svg]:size-5"
             >
+              <span>Close</span>
               <X aria-hidden="true" />
             </Button>
           </div>
@@ -137,19 +147,11 @@ export function Footer() {
             >
               Instagram
             </a>
-            <a
-              href="https://behance.net"
-              rel="noreferrer"
-              target="_blank"
-              className="hover:text-primary transition-colors"
-            >
-              Behance
-            </a>
           </div>
         </div>
         <div className="text-left text-label text-muted-foreground lg:text-right">
           <p>© 2026 InchByInch Studio</p>
-          <p className="mt-2">Lisbon · Los Angeles</p>
+          <p className="mt-2">Bardhaman · West Bengal</p>
         </div>
       </div>
     </footer>

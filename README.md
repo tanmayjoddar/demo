@@ -1,4 +1,4 @@
-# Atelier Verve — Interior Architecture Studio
+# InchByInch — Interior Studio
 
 Architectural interiors shaped through light, honest materials and disciplined restraint.
 

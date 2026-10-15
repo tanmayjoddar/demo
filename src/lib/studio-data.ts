@@ -6,59 +6,43 @@ import hero5 from "@/assets/hero5.png";
 
 export const projects = [
   {
-    name: "Villa Ethereal",
-    category: "Residential · Mykonos",
+    name: "Egyptian-Inspired Room",
+    category: "Residential · Bardhaman, West Bengal",
     image: hero3,
     shape: "wide",
-    story: "Set above a wind-cut cove, the house was planned as shade before shelter. Local limestone, lime plaster and smoked oak temper the intense Aegean light. We lowered the main seating plane so the horizon remains unbroken from the entry; a concealed linen screen lets the family soften glare without losing the sea.",
+    story:
+      "A bold feature wall inspired by ancient Egypt, filled with hieroglyphs, pyramids and traditional artwork in warm sandy tones. Open wooden shelves display books while small wall lights add a playful touch — a space made to feel different, colourful and full of character.",
   },
   {
-    name: "The Monolith",
-    category: "Residential · Los Angeles",
+    name: "Warm Media Wall",
+    category: "Residential · Bardhaman",
     image: hero1,
     shape: "tall",
-    story: "A difficult central stair became the house’s quiet landmark. Hand-finished plaster wraps a continuous brass rail, while pale travertine catches shifting shadows throughout the day. The inner curve was widened by six inches after the client asked for a place where children could pause and sit.",
+    story:
+      "A clean TV unit combining light wood, marble-finish panels and warm lighting. Open shelves add a simple display area, while the wooden slats and soft LED lights give the wall a warm and comfortable feel.",
   },
   {
-    name: "The Cinder House",
-    category: "Private residence · Kyoto",
+    name: "Framed Art Wall",
+    category: "Residential · Katwa, West Bengal",
     image: hero4,
     shape: "tall",
-    story: "The dining room sits between a dark cedar ceiling and cool clay walls, creating intimacy without closing the garden view. A single oxidized-brass light marks the table rather than the room. Its height is adjustable for long dinners, flower arranging and the family’s weekly calligraphy practice.",
+    story:
+      "A clean and elegant wall designed around a collection of framed artwork. Soft artwork, gold frames and a white wall create a calm and bright look, while warm ceiling lighting highlights each piece. Light marble flooring keeps the focus on the art — a simple but eye-catching feature.",
   },
   {
-    name: "Fragment No. 9",
-    category: "Studio showcase · London",
+    name: "Golden Frame",
+    category: "Residential · Bardhaman, West Bengal",
     image: hero5,
     shape: "square",
-    story: "This compact salon tests one material at three scales: veined marble becomes hearth, ledge and threshold. The rounded plaster reveal removes hard glare from the concealed light. A low, cool ledge was kept clear at the owner’s request for rotating ceramics from local makers.",
+    story:
+      "A simple feature wall built around one central artwork. The textured wall and layered golden borders give the space a rich look while keeping the design clean, and warm lighting from above highlights the texture and golden details.",
   },
   {
-    name: "Pale Passage",
-    category: "Hospitality · Mallorca",
+    name: "Decorative Living Space",
+    category: "Residential · Bardhaman",
     image: hero2,
     shape: "square",
-    story: "A former stone storehouse became a six-room retreat organized around a curved passage. Honed limestone continues from floor to stair, while recessed niches hold one object each. Guests can dim every room from a single bedside control, leaving only the passage glow after midnight.",
-  },
-] as const;
-
-export const journalEntries = [
-  {
-    title: "A room should change at four o’clock",
-    date: "12 August 2026",
-    read: "4 minute read",
-    excerpt: "Afternoon light is not an inconvenience to screen away. It is a second material, one that makes plaster warmer, brass quieter and familiar rooms briefly unfamiliar.",
-  },
-  {
-    title: "The useful edge of restraint",
-    date: "28 June 2026",
-    read: "6 minute read",
-    excerpt: "Restraint is not an empty room. It is the discipline of deciding which objects earn a relationship with the architecture—and which need somewhere generous to disappear.",
-  },
-  {
-    title: "What stone remembers",
-    date: "03 May 2026",
-    read: "5 minute read",
-    excerpt: "We specify stone for what happens after installation: the softened threshold, the mark beside a basin, the polish made slowly by hands and years.",
+    story:
+      "A bright living space with golden wall details, display shelves and traditional décor. Wooden ceiling strips and soft LED lighting add warmth, while the patterned walls and curved panels give the room a rich and personal look.",
   },
 ] as const;
